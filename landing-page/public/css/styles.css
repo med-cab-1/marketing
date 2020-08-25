@@ -11,7 +11,14 @@ body {
 #_container_ {
   display: grid;
   grid-gap: 1px;
-  height: 100vh;
+  /*
+    Wireframe Dimensions:
+    width:  1440
+    height: 1697
+        => Page should be (1697/1440) = 1.178472 x taller than wider
+        => Since width will be 100vw, wet height to 117.8472vw
+  */
+  height: 117.8472vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 1fr 1.2fr 100px;
   grid-template-areas: "_navbar_     _navbar_" "_hero-left_  _hero-right_" "_main_       _main_" "_footer_     _footer_";
@@ -67,4 +74,16 @@ body {
   width: 20%;
   display: flex;
   justify-content: space-around;
+}
+
+._image-container_ {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#_hero-left_ > ._image-container_ {
+  background-image: url("../assets/img/pharmacy-inventory.jpg");
 }
