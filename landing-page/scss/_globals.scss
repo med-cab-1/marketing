@@ -6,3 +6,8 @@
     padding: 0;
     font-family: $Roboto;
 }
+
+._center_ {
+    display: grid;
+    place-items: center;
+}

@@ -7,6 +7,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+._center_ {
+  display: grid;
+  place-items: center;
+}
+
 body {
   background-color: black;
 }
@@ -44,7 +49,7 @@ body {
 
 #_nav_ {
   grid-area: _navbar_;
-  background: palegreen;
+  background: #044953;
 }
 
 #_hero-left_ {
