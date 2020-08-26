@@ -100,27 +100,26 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
+#_hero-right_ {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
 #_hero-right_ > ._row_:nth-child(1) {
   display: flex;
   justify-content: flex-end;
-  border: solid black 1px;
+  border: solid orange 5px;
 }
 
-#_hero-right_ > ._row_ > ._container_ {
+#_hero-right_ > ._row_:nth-child(2) > ._container_ {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: solid green 1px;
+  border: solid green 5px;
   height: 100%;
 }
 
 #_hero-right_ > ._row_ > ._container_ > ._row_ {
   border: 5px hotpink dashed;
-}
-
-#_hero-right_
-#josh-1 {
-  border: solid red 1px;
-  height: 100%;
-  padding: 20%;
 }
