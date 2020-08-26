@@ -1,0 +1,34 @@
+#_hero-right_  {
+
+    > ._row_:nth-child(1) {
+        display: flex;
+        justify-content: flex-end;
+        border: solid black 1px;
+    }
+
+
+    > ._row_ > ._container_ {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        border: solid green 1px;
+        height: 100%;
+    }
+
+    > ._row_ > ._container_ > ._row_ {
+        border: 5px hotpink dashed;
+    }
+
+}
+
+
+                        
+
+                        #_hero-right_ 
+
+                        #josh-1 {
+                            border: solid red 1px;
+                            height: 100%;
+                            padding: 20%;
+                        }
