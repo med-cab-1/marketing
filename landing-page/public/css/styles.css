@@ -12,7 +12,12 @@
   place-items: center;
 }
 
+h1 {
+  color: white;
+}
+
 h2 {
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
   color: #044953;
 }
@@ -83,26 +88,17 @@ body {
   justify-content: center;
 }
 
-._social-container_ {
-  width: 20%;
+._nav-container_ {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
 }
 
-._image-container_ {
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+._nav-container_ > h1 {
+  font-size: 50px;
 }
 
-#_hero-left_ > ._image-container_ {
-  background-image: url("../assets/img/pharmacy-inventory.jpg");
-}
-
-h2 {
-  font-family: "Roboto", sans-serif;
+._nav-container_ > svg {
+  height: 75px;
 }
 
 #_hero-right_ {
@@ -127,4 +123,19 @@ h2 {
 
 #_hero-right_ > ._row_:nth-child(2) > ._container_ > ._row_ {
   border: 5px hotpink dashed;
+}
+
+#_hero-left_ ._image-container_ {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/img/pharmacy-inventory.jpg");
+}
+
+footer > ._social-container_ {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
 }

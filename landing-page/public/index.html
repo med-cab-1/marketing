@@ -11,14 +11,12 @@
     <script type="module" src="./comps/card-2/main.js" defer></script>
     <script type="module" src="./comps/card-3/main.js" defer></script>
     <script type="module" src="./comps/button/main.js" defer></script>
-    <script type="module" src="./comps/button-2/main.js" defer></script>
 </head>
 <body>
 
     <div id="_container_">
 
         <nav id="_nav_" class="_center_">
-
             <div class="_nav-container_">
                 <h1>
                     Med Cabinet
@@ -88,25 +86,6 @@
 
             </div>
             <!-- /._nav-container_ -->
-
-            <style>
-                ._nav-container_ {
-                    display: flex;
-                    align-items: center;
-                }
-
-                ._nav-container_ > h1 {
-                    font-size: 50px;
-                    color: white;
-                }
-
-                ._nav-container_ > svg {
-                    height: 75px;
-                }
-            </style>
-
-
-
         </nav>
 
         <section id="_hero-left_">
@@ -120,17 +99,12 @@
                 <button-comp name="Sign In"></button-comp>
             </div>
 
-            <div id="josh-1" class="_row_">
+            <div class="_row_ _center_">
 
                 <div class="_container_">
                     <div class="_row_">
                         <h2>Find the strain that you need</h2>
-                        <style>
-                            ._row_ > h2 {
-                                font-size: 40px;
-                                color: #044953;
-                            }
-                        </style>
+
                     </div>
 
                     <div class="_row_">
@@ -144,11 +118,12 @@
                             <input id="city" name="city" type="text" placeholder="City">
                         </label>
 
-                        <button-comp name="Find a strain"></button-comp>
+                        <button-comp name="Find a Strain"></button-comp>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- /._hero-right_ -->
 
         <main id="_main_">
             <card-1></card-1>
