@@ -58,10 +58,12 @@ body {
 #_hero-right_ {
   grid-area: _hero-right_;
   background: $background-7;
+  // background: #fff; 
 }
 #_main_ {
   grid-area: _main_;
   background: $background-2;
+  // background: #fff;
   display: flex;
   justify-content: space-around;
   align-items: center;

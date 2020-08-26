@@ -11,6 +11,7 @@
     <script type="module" src="./comps/card-2/main.js" defer></script>
     <script type="module" src="./comps/card-3/main.js" defer></script>
     <script type="module" src="./comps/button/main.js" defer></script>
+    <script type="module" src="./comps/button-2/main.js" defer></script>
 </head>
 <body>
 
@@ -108,12 +109,6 @@
 
         </nav>
 
-        <style>
-            #_nav_ {
-                display: 
-            }
-        </style>
-
         <section id="_hero-left_">
             <div class="_image-container_">
             </div>
@@ -121,35 +116,79 @@
 
         <section id="_hero-right_">
 
-            <div class="_row_">
-                <button-comp></button-comp>
+            <div id="JOSH" class="_row_">
                 <button-comp></button-comp>
             </div>
             <style>
-                #_hero-right_ ._row_:nth-child(1) {
+                #JOSH {
+                    border: solid black 1px;
+                }
+
+                #_hero-right_ > ._row_:nth-child(1) {
                     display: flex;
                     justify-content: flex-end;
                 }
             </style>
 
-            <div class="_row_">
-                <h2>Find the strain that you need</h2>
+            <div id="josh-1" class="_row_">
 
-                <div class="_row_">
-                    <button-comp></button-comp>
+                <div id="josh-2" class="_container_">
+                    <div class="_row_">
+                        <h2>Find the strain that you need</h2>
+                        <style>
+                            ._row_ > h2 {
+                                font-size: 40px;
+                                color: #044953;
+                            }
+                        </style>
+                    </div>
+                    <style>
+                        #josh-2 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                        }
+
+                        #josh-2 > ._row_ {
+                            border: 5px hotpink dashed;
+                        }
+                    </style>
+
+
+
+                    <div class="_row_">
+                        
+                        <form id="" action="" method="get"></form>
+
+                        <label for="city">
+                            <!-- TODO: Before use starts typing have text inside field. -->
+                                <!-- -Once user starts typing, have text above field. -->
+                            <p>City:</p>
+                            <input id="city" name="city" type="text" placeholder="City">
+                        </label>
+
+                        <button-comp2></button-comp2>
+                    </div>
                 </div>
+
             </div>
+            <style>
+                #josh-1 {
+                    border: solid red 1px;
+                    height: 100%;
+                    padding: 20%;
+                }
+                #josh-2 {
+                    border: solid green 1px;
+                    height: 100%;
+                }
+            </style>
+
+            
+
 
         </section>
-        <style>
-            #_hero-right_ {
-                /* display: flex; */
-                /* flex-direction: column; */
-                /* justify-content: space-between; */
 
-                padding: 100px;
-            }
-        </style>
 
 
 
