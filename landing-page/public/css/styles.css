@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -88,4 +89,8 @@ body {
 
 #_hero-left_ > ._image-container_ {
   background-image: url("../assets/img/pharmacy-inventory.jpg");
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
 }
