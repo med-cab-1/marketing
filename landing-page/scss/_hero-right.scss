@@ -10,18 +10,18 @@
         border: solid orange 5px;
     }
 
+    > ._row_:nth-child(2) {
+        > ._container_ {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
 
-    > ._row_:nth-child(2) > ._container_ {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+            border: solid green 5px;
+            height: 100%;
 
-        border: solid green 5px;
-        height: 100%;
+            > ._row_ {
+                border: 5px hotpink dashed;
+            }
+        }
     }
-
-    > ._row_ > ._container_ > ._row_ {
-        border: 5px hotpink dashed;
-    }
-
 }

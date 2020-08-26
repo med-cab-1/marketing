@@ -120,6 +120,6 @@ h2 {
   height: 100%;
 }
 
-#_hero-right_ > ._row_ > ._container_ > ._row_ {
+#_hero-right_ > ._row_:nth-child(2) > ._container_ > ._row_ {
   border: 5px hotpink dashed;
 }
