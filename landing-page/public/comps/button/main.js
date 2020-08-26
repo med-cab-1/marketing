@@ -32,7 +32,7 @@ template.innerHTML = `
 
     <button>
         <p>
-            Sign In
+        
         </p>
     </button>
 `;
@@ -45,7 +45,7 @@ class WebComp extends HTMLElement {
         const deep_copy = true; // include descendants
         this.shadowRoot.appendChild(template.content.cloneNode(deep_copy));
 
-        // this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
+        this.shadowRoot.querySelector('p').innerText = this.getAttribute('name');
 
         // this.innerHTML = ``;
     }
