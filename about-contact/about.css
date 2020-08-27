@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-	body {
+    body {
      margin:0;
      padding:0;
      box-sizing: border-box;
@@ -8,6 +8,7 @@
      font-size: 10px;
      font-family: "Roboto",sans-serif;
  }
+ 
 
  ul {
   list-style-type: none;
@@ -22,7 +23,7 @@ li {
 
 li a {
   display: block;
-  background-color: #eee;
+  background-color: #1f2325;
 }
 
  a{
@@ -36,11 +37,12 @@ li a {
     padding: .012rem;
     width: 100%;
     font-size: 14px;
-    background-color: #eee;
+    background-color: #1f2325;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
            0 10px 10px rgba(0,0,0,0.22);
  }
 .navbar{
+    background-color: #1f2325;
     color: #679437;
     padding: 1.55em;
 }
@@ -54,14 +56,11 @@ li a {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #eee;
     }
-    
     .heading{
         font-size: 20px;
-        letter-spacing: 1.8rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        letter-spacing: 2rem;
         /* border: 1px solid red; */
     }
 
@@ -72,9 +71,8 @@ li a {
      flex-direction: column;
  }
  .card{
-     /* inner card */
-     width: 70rem;
-     background-color: #ebeef8;
+     width: 32rem;
+     background-color: #1f2325;;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -85,13 +83,22 @@ li a {
            0 10px 10px rgba(0,0,0,0.22);
  }
  .card .card-img{
-    width: 70rem;
+    width: 100%;
     height: 26rem;
     object-fit: cover;
-    clip-path: polygon(4% 9%, 96% 8%, 96% 78%, 75% 78%, 75% 100%, 58% 79%, 4% 79%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0,100% 78%, 0% 100% );
     border-radius: 10px;
  }
-
+ .profile-img{
+     width: 15rem;
+     height: 15rem;
+     object-fit: cover;
+     border-radius:50%;
+     margin-top: -10rem;
+     z-index: 999;
+     border: 1rem solid #ebeef8;
+ }
 
  .card{
      font-size: 1.5rem;
@@ -101,7 +108,7 @@ li a {
  }
 
  .job-title{
-     color:#777;
+     color: #777;
      font-size: 1.5rem;
      font-weight: 300;
  }
@@ -111,22 +118,19 @@ li a {
      margin: 1.5rem 0;
      font-style: italic;
      text-align: center;
-     color: #333;
+     color: #eee;
  }
 
  .card .btn{
-    display: flex;
-    justify-content: center;
-    padding:1rem ;
+    padding:1rem 2.5rem;
     background-color: #679437;
     border-radius:  1rem ; 
     /* changes button */
+    margin: 1rem 0;
     text-transform: uppercase;
     color: #eee;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition: all .5s;
-    width: 10rem;
-    margin-left: 27rem;
  }
  .card .btn .hover{
      transform: translateY(-2px);
@@ -141,41 +145,39 @@ li a {
  .social-media{
      width: 100%;
      list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: space-between;
-     padding: 1em;
+     display: flex;
+     justify-content: space-evenly;
+     padding: 2em 0;
      margin-top: 1.5rem;
      border-top: 1px solid rgba(0,0,0,.1) ;
+    
  }
  .social-media i{
      font-size: 3rem;
-     margin: .25em;
  }
  
  
- .fa-facebook-f{
-     color:#4267B2;
+ .fa-linkedin-in{
+     color:#2867B2;
      display: block;
      height: 42px;
      width: 42px;
      line-height: 42px;
      -moz-border-radius: 50%;
      border-radius: 50%; 
-     background-color:#4267B2;
+     background-color:#2867B2;
      color: white;
      text-align: center;
  }
 
- .fa-instagram{
+ .fa-github{
     display: block;
     height: 42px;
     width: 42px;
     line-height: 42px;
     -moz-border-radius: 50%;
     border-radius: 50%; 
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-color:#211F1F;
     color: white;
     text-align: center;
 }
@@ -189,39 +191,6 @@ li a {
     background-color: #1EA1F1;;
     color: white;
     text-align: center;
-}
-.fa-twitter{
-    display: block;
-    height: 42px;
-    width: 42px;
-    line-height: 42px;
-    -moz-border-radius: 50%;
-    border-radius: 50%; 
-    background-color: #1EA1F1;;
-    color: white;
-    text-align: center;
-}
-.fa-snapchat-ghost{
-    display: block;
-    height: 42px;
-    width: 42px;
-    line-height: 42px;
-    -moz-border-radius: 50%;
-    border-radius: 50%; 
-    background-color: #FFFC00;
-    color: white;
-    text-align: center;
-}
-.fa-google-plus{
-        display: block;
-        height: 42px;
-        width: 42px;
-        line-height: 42px;
-        -moz-border-radius: 50%;
-        border-radius: 50%; 
-        background-color: #d34836;
-        color:white;
-        text-align: center;
 }
 .fa-envelope{
     display: block;
@@ -245,35 +214,31 @@ li a {
 .fa-envelope:hover{
    color:red;
 } */
-* {
-    box-sizing: border-box;
-  }
-  /* form starts here */
-  form{
-     font-family: "Roboto",sans-serif;
-     /* border:red 5px solid; */
-  }
 
-  label{
-    /* border:blue 5px solid; */
-    font-size: 1.5rem;
-    font-weight: bold ;
-  }
-  input{
-    /* border:gray 5px solid; */
-    width:60%;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-  textarea{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 17rem;
-      width: 67rem;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-  }
 
-  
+@media screen and (min-width:800px){
+.card-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-items: space-evenly;
+    
+}
+.card{
+   margin:2em; 
+   transition: transform .5s;
+}
+}
+@media screen and (min-width:1000px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+       justify-content: space-around;
+       align-items: space-around;
+        
+    }
+    .card{
+       margin:2em; 
+       transition: transform .5s;
+    }
+    }
