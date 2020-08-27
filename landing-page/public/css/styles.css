@@ -145,7 +145,7 @@ body {
 #_hero-left_ ._overlay_ {
   height: 100%;
   width: 100%;
-  background: rgba(255, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
 }
 
