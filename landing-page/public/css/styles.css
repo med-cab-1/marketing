@@ -27,7 +27,7 @@ a {
 }
 
 body {
-  background-color: black;
+  background-color: #53762B;
 }
 
 #_container_ {
@@ -63,22 +63,19 @@ body {
 
 #_nav_ {
   grid-area: _navbar_;
-  background: #044953;
+  background: #1F2325;
 }
 
 #_hero-left_ {
   grid-area: _hero-left_;
-  background: plum;
 }
 
 #_hero-right_ {
   grid-area: _hero-right_;
-  background: deepskyblue;
 }
 
 #_main_ {
   grid-area: _main_;
-  background: yellowgreen;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -86,7 +83,7 @@ body {
 
 #_footer_ {
   grid-area: _footer_;
-  background: orchid;
+  background: #1F2325;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,4 +154,8 @@ footer > ._social-container_ {
   width: 20%;
   display: flex;
   justify-content: space-around;
+}
+
+footer > ._social-container_ i {
+  color: #C7C3BC;
 }
