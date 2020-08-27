@@ -12,18 +12,17 @@
   place-items: center;
 }
 
-h1 {
-  color: white;
+h1, h2, h3, h4, h5 {
+  color: #E8E6E2;
 }
 
 h2 {
   font-size: 40px;
-  color: #044953;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #C7C3BC;
 }
 
 body {
@@ -111,19 +110,15 @@ body {
 #_hero-right_ > ._row_:nth-child(1) {
   display: flex;
   justify-content: flex-end;
-  border: solid orange 5px;
+  align-items: center;
+  padding-right: 4%;
 }
 
 #_hero-right_ > ._row_:nth-child(2) > ._container_ {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: solid green 5px;
   height: 100%;
-}
-
-#_hero-right_ > ._row_:nth-child(2) > ._container_ > ._row_ {
-  border: 5px hotpink dashed;
 }
 
 #_hero-left_ {
