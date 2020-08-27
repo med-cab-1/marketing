@@ -1,19 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-}
-
-._center_ {
-  display: grid;
-  place-items: center;
-}
-
-h1 {
-  color: white;
 }
 
 h2 {
@@ -22,8 +13,9 @@ h2 {
   color: #044953;
 }
 
-body {
-  background-color: black;
+._center_ {
+  display: grid;
+  place-items: center;
 }
 
 #_container_ {
@@ -125,10 +117,6 @@ body {
   border: 5px hotpink dashed;
 }
 
-#_hero-left_ {
-  position: relative;
-}
-
 #_hero-left_ ._image-container_ {
   height: 100%;
   width: 100%;
@@ -136,17 +124,6 @@ body {
   background-size: cover;
   background-position: center;
   background-image: url("../assets/img/pharmacy-inventory.jpg");
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-
-#_hero-left_ ._overlay_ {
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 0, 0, 0.5);
-  position: absolute;
 }
 
 footer > ._social-container_ {

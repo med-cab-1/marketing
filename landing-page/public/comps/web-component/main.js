@@ -1,8 +1,8 @@
 const template = document.createElement('template');
 template.innerHTML = `
     <style>
-        h3: {
-            color: green;
+        h3 {
+            color: blue;
         }
     </style>
 

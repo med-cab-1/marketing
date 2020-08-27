@@ -1,0 +1,23 @@
+#_hero-right_ {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+#_hero-right_ > ._row_:nth-child(1) {
+  display: flex;
+  justify-content: flex-end;
+  border: solid orange 5px;
+}
+
+#_hero-right_ > ._row_:nth-child(2) > ._container_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: solid green 5px;
+  height: 100%;
+}
+
+#_hero-right_ > ._row_:nth-child(2) > ._container_ > ._row_ {
+  border: 5px hotpink dashed;
+}

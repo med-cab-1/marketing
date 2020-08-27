@@ -1,4 +1,10 @@
 #_hero-left_  {
+
+
+    // height: 100%;
+    // width: 100%;
+    position: relative;
+    
     ._image-container_ {
         height: 100%;
         width: 100%;
@@ -6,5 +12,17 @@
         background-size: cover;
         background-position: center;
         background-image: url('../assets/img/pharmacy-inventory.jpg');
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+    }
+    ._overlay_ {
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 0, 0, 0.5);
+        position: absolute;
     }
 }
