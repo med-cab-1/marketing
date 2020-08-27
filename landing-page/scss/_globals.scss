@@ -17,7 +17,11 @@ h1 {
 }
 
 h2 {
-    font-family: $Roboto;
     font-size: 40px;
     color: #044953;
+}
+
+a {
+    text-decoration: none;
+    color: $background-0;
 }
