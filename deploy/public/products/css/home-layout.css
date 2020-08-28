@@ -27,15 +27,17 @@ main {
     #_edu_ > .__container__  {
         display: flex;
         flex-direction: column;
-
         padding: 0 20%;
-  }
-  /* #_main_ {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  } */
+    }
+    strain-1, strain-2, strain-3,
+    disp-1, disp-2, disp-3,
+    edu-1, edu-2, edu-3 {
+      margin-bottom: 5%;
+    }
+
+    #_strains_ > h3, #_disp_ > h3, #_edu_ > h3 {
+        margin-left: 20%;
+    }
 }
 
 #_strains_ > .__container__ {
