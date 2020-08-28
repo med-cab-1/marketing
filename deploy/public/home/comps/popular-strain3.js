@@ -1,11 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Med Cab</title>
-</head>
-<body>
+const template = document.createElement('template');
+template.innerHTML = `
+    <style>
+
+        /* fill remaing space vertically with flexbox: */
+        /* https://codepen.io/JoshuaHolloway/pen/rNemPom */
+
+        ._popular-strain_{
+            height: 500px;
+            /* width: 500px; */
+            border: solid red 5px;
+            display: flex;
+            flex-direction: column;
+            
+            background-color: var(--color-primary);
+        }
+
+        ._top_ {
+            border: solid blue 5px;
+            height: 70%;
+        }
+
+        ._bottom_ {
+            border: solid orange 5px;
+            flex: 1;
+        }
+        ._bottom_ > h5 {
+            font-size: 2.4rem;
+        }
+
+        ._top_, ._bottom_ {
+            display: grid;
+            place-items: center;
+        }
+
+    </style>
+
+
+            <div class="_popular-strain_">
+
+                <div class="_top_">
+
+
 
 <svg width="86" height="96" viewBox="0 0 86 96" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
@@ -69,6 +104,29 @@
 </defs>
 </svg>
 
+                    
+                </div>
 
-</body>
-</html>
+                <div class="_bottom_">
+                    <h5>Silver Haze</h5>
+                </div>
+                
+            </div>
+
+`;
+
+class WebComp extends HTMLElement {
+    constructor() {
+        super();
+
+        this.attachShadow({ mode: 'open' });
+        const deep_copy = true; // include descendants
+        this.shadowRoot.appendChild(template.content.cloneNode(deep_copy));
+
+        // this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
+
+        // this.innerHTML = ``;
+    }
+}
+
+window.customElements.define('popular-strain3', WebComp);
