@@ -48,8 +48,8 @@ li a {
 
 
  section{
-    padding: 1.1rem ;
-    background-color: #679437;
+    /* padding: 1.1rem ; */
+    
  }
     h1{
         display: flex;
@@ -60,7 +60,6 @@ li a {
     .heading{
         font-size: 20px;
         letter-spacing: 2rem;
-        /* border: 1px solid red; */
     }
 
  .card-wrapper{
@@ -124,7 +123,6 @@ li a {
     padding:1rem 2.5rem;
     background-color: #679437;
     border-radius:  1rem ; 
-    /* changes button */
     margin: 1rem 0;
     text-transform: uppercase;
     color: #eee;
@@ -140,4 +138,3 @@ li a {
      transform: translateY(0);
      box-shadow: none;
  }
-
