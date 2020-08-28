@@ -1,0 +1,17 @@
+main {
+    height: 500px;
+}
+
+
+#_popular-strains_ {
+    height: 100px;
+    border: solid red 5px;
+
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+._popular-strain_ {
+    border: solid blue 5px;
+}
