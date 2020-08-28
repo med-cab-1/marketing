@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-    body {
+body {
      margin:0;
      padding:0;
      box-sizing: border-box;
@@ -155,7 +155,7 @@ li a {
  }
  
  
- ._fa-facebook-f_{
+ .fa-facebook-f{
      color:#4267B2;
      display: block;
      height: 42px;
@@ -168,7 +168,7 @@ li a {
      text-align: center;
  }
 
- ._fa-instagram_{
+ .fa-instagram{
     display: block;
     height: 42px;
     width: 42px;
@@ -180,7 +180,7 @@ li a {
     color: white;
     text-align: center;
 }
-._fa-twitter_{
+.fa-twitter{
     display: block;
     height: 42px;
     width: 42px;
@@ -191,7 +191,7 @@ li a {
     color: white;
     text-align: center;
 }
-._fa-twitter_{
+.fa-twitter{
     display: block;
     height: 42px;
     width: 42px;
@@ -202,7 +202,7 @@ li a {
     color: white;
     text-align: center;
 }
-._fa-snapchat-ghost_{
+.fa-snapchat-ghost{
     display: block;
     height: 42px;
     width: 42px;
@@ -213,7 +213,7 @@ li a {
     color: white;
     text-align: center;
 }
-._fa-google-plus_{
+.fa-google-plus{
         display: block;
         height: 42px;
         width: 42px;
