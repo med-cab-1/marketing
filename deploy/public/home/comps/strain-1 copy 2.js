@@ -3,48 +3,52 @@ template.innerHTML = `
     <style>
         @import url('./css/card.css');
 
-        ._top-container_ {
-            width: 100%;
+        #_hero_ {
             height: 100%;
+            width: 100%;
             position: relative;
         }
-
-        ._image-container {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
-
-        ._top_ {
+        ._image-container_ {
             background-image: url('./img/edu-1.png');
-        }
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
 
-        ._top-container_ > ._overlay_ {
             height: 100%;
             width: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
             position: absolute;
         }
 
-        ._bottom_  p { 
-            color: var(--text-primary);
+        #_hero_ > ._overlay_ {
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            position: absolute;
+        }
+
+        #_hero_  svg,
+        ._bottom_ p { 
             z-index: 1;
-            font-size: var(--h3);
+        }
+
+        ._bottom_ p {
+            color: var(--text-secondary);
+            font-size: var(--h2);
         }
 
     </style>
 
 
-            <div class="_container_">
+    <div class="_container_">
 
-                <div class="_top_">
+        <div class="_top_">
 
-                    <div class="_top-container_">
-                    
-
-
-                        <div class="_image-container_">
-
+            <section id="_hero_">
+                <div class="_image-container_">
 
                             <svg width="86" height="96" viewBox="0 0 86 96" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d)">
@@ -103,19 +107,17 @@ template.innerHTML = `
                             </linearGradient>
                             </defs>
                             </svg>
-                        </div>
-                    </div>
-
-                    <div class="_overlay_"></div>
-
                 </div>
+                <div class="_overlay_"></div>
+            </section>
 
-                <div class="_bottom_">
-                    <p>Silver Haze</p>
-                </div>
-                
-            </div>
+        </div>
 
+        <div class="_bottom_">
+            <p>Sativa</p>
+        </div>
+        
+    </div>
 `;
 
 class WebComp extends HTMLElement {
