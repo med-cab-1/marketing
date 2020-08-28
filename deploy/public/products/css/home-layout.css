@@ -21,7 +21,7 @@ main {
     margin: 1.5% 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   #_strains_ > .__container__,
     #_disp_ > .__container__,
     #_edu_ > .__container__  {
@@ -37,6 +37,28 @@ main {
 
     #_strains_ > h3, #_disp_ > h3, #_edu_ > h3 {
         margin-left: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 0;
+    }
+
+  #_strains_ > .__container__,
+    #_disp_ > .__container__,
+    #_edu_ > .__container__  {
+        display: flex;
+        padding: 0 8%;
+    }
+    strain-1, strain-2, strain-3,
+    disp-1, disp-2, disp-3,
+    edu-1, edu-2, edu-3 {
+      margin-bottom: 10%;
+    }
+
+    #_strains_ > h3, #_disp_ > h3, #_edu_ > h3 {
+        margin-left: 10%;
     }
 }
 
