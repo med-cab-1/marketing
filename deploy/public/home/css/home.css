@@ -41,9 +41,30 @@ body {
 #_hero_ {
   height: 100%;
   height: 200px;
+  position: relative;
+}
+
+#_hero_ > ._image-container_ {
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url('../img/home-hero.png');
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+}
+
+#_hero_ ._overlay_ {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
 }
