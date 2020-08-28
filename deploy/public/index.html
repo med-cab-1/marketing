@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Med Cab | Landing Page</title>
 
     <link rel="stylesheet" href="/landing-page/css/styles.css">
+    <link rel="stylesheet" href="/about/about.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script type="module" src="/landing-page/comps/card/card-1.js" defer></script>
     <script type="module" src="/landing-page/comps/card/card-2.js" defer></script>
     <script type="module" src="/landing-page/comps/card/card-3.js" defer></script>
     <script type="module" src="/landing-page/comps/button/button.js" defer></script>
-    <link rel="stylesheet" href="/about/about.css"/>
+    
 </head>
 <body>
 
     <div id="_container_">
+        <nav id="_nav_">
+                <ul class="conatinernav">
+                    <li><a class="navbar" href="/">Home</a></li>
+                    <li><a class="navbar" href="#">Products</a></li>
+                    <li><a class="navbar" href="/about">About</a></li>
+                    <li><a class="navbar" href="/contact">Contact</a></li>
 
-
-    <nav id="_nav_">
-        <ul class="conatinernav">
-            <li><a class="navbar" href="#">Login</a></li>
-            <li><a class="navbar" href="#">Home</a></li>
-            <li><a class="navbar" href="#">Products</a></li>
-            <li><a class="navbar" href="/about">About</a></li>
-            <li><a class="navbar" href="/contact">Contact</a></li>
-            </ul>
+                    <div id="_right_nav-item">
+                        <style>
+                            #_right_nav-item {
+                                display: flex;
+                                justify-content: flex-end;
+                                margin-right: 2%;
+                            }
+                        </style>
+                        <li><a class="navbar" href="#">Login</a></li>
+                    </div>
+                </ul>
         </nav>
-
 
         <!-- <nav id="_nav_" class="_center_">
             <div class="_nav-container_">
