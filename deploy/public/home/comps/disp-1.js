@@ -22,7 +22,7 @@ template.innerHTML = `
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            background-image: url('img/dispensary-3.png');
+            background-image: url('img/dispensary-1.png');
 
         }
 
@@ -70,4 +70,4 @@ class WebComp extends HTMLElement {
     }
 }
 
-window.customElements.define('dispensary-3', WebComp);
+window.customElements.define('disp-1', WebComp);
