@@ -1,8 +1,14 @@
 main {
     padding: 0 10%;
 }
-#_popular-strains_ > h3, #_nearby-dispensaries_ > h3 {
+#_popular-strains_ > h3, #_nearby-dispensaries_ > h3, #_get-educated_ > h3 {
     margin-left: 2%;
+}
+
+#_popular-strains_,
+#_nearby-dispensaries_,
+#_get-educated_{
+    margin: 3% 0;
 }
 #_popular-strains_ > .__container__,
 #_nearby-dispensaries_ > .__container__,
@@ -12,6 +18,7 @@ main {
     grid-gap: 1px;
     grid-template-rows: 1fr;
     grid-gap: 3%;
+    margin: 1.5% 0;
 }
 #_popular-strains_ > .__container__ {
     grid-template-columns: repeat(3, 1fr);
