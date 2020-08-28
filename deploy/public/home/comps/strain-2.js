@@ -128,4 +128,4 @@ class WebComp extends HTMLElement {
     }
 }
 
-window.customElements.define('popular-strain2', WebComp);
+window.customElements.define('strain-2', WebComp);
