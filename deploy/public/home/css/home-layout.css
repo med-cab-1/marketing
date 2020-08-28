@@ -13,7 +13,8 @@ main {
 }
 
 #_popular-strains_ > .__container__,
-#_nearby-dispensaries_ > .__container__ {
+#_nearby-dispensaries_ > .__container__,
+#_get-educated_ > .__container__ {
     height: 100%;
     display: grid;
     grid-gap: 1px;
@@ -24,6 +25,9 @@ main {
 }
 #_nearby-dispensaries_ > .__container__ {
     grid-template-columns: repeat(4, 1fr);
+} 
+#_get-educated_ > .__container__ {
+    grid-template-columns: repeat(3, 1fr);
 } 
 /* = = = = = = = = = =  */
 
