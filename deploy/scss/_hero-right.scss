@@ -1,0 +1,33 @@
+#_hero-right_  {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+
+    > ._row_:nth-child(1) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 4%;
+
+        // DEBUG:
+        // border: solid orange 5px;
+    }
+
+    > ._row_:nth-child(2) {
+        > ._container_ {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            // DEBUG
+            // border: solid green 5px;
+            height: 100%;
+
+            // DEBUG
+            > ._row_ {
+                // border: 5px hotpink dashed;
+            }
+        }
+    }
+}

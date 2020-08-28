@@ -1,0 +1,12 @@
+._nav-container_ {
+    display: flex;
+    align-items: center;
+
+    > h1 {
+        font-size: 50px;
+    }
+
+    > svg {
+        height: 75px;
+    }
+}
