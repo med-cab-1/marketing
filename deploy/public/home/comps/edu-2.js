@@ -1,7 +1,7 @@
 const template = document.createElement('template');
 template.innerHTML = `
     <style>
-        @import url('./css/edu.css');
+        @import url('./css/card.css');
 
         ._top_ {
             background-image: url('./img/edu-2.png');
