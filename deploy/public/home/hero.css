@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+._center_ {
+  display: grid;
+  place-items: center;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #E8E6E2;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #C7C3BC;
+}
+
+body {
+  background-color: #53762B;
+}
+
+#_container_ {
+  display: grid;
+  grid-gap: 1px;
+  /*
+    Wireframe Dimensions:
+    width:  1440
+    height: 1697
+        => Page should be (1697/1440) = 1.178472 x taller than wider
+        => Since width will be 100vw, wet height to 117.8472vw
+  */
+  height: 117.8472vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr 1.2fr 100px;
+  grid-template-areas: "_navbar_     _navbar_" "_hero-left_  _hero-right_" "_main_       _main_" "_footer_     _footer_";
+}
+
+@media (max-width: 1000px) {
+  #_container_ {
+    height: 200vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 4.5fr 100px;
+    grid-template-areas: "_navbar_    " "_hero-left_ " "_hero-right_" "_main_" "_footer_    ";
+  }
+  #_main_ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+#_nav_ {
+  grid-area: _navbar_;
+  background: #1F2325;
+}
+
+#_hero-left_ {
+  grid-area: _hero-left_;
+}
+
+#_hero-right_ {
+  grid-area: _hero-right_;
+}
+
+#_main_ {
+  grid-area: _main_;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#_footer_ {
+  grid-area: _footer_;
+  background: #1F2325;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._nav-container_ {
+  display: flex;
+  align-items: center;
+}
+
+._nav-container_ > h1 {
+  font-size: 50px;
+}
+
+._nav-container_ > svg {
+  height: 75px;
+}
+
+#_hero-right_ {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+#_hero-right_ > ._row_:nth-child(1) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 4%;
+}
+
+#_hero-right_ > ._row_:nth-child(2) > ._container_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#_hero-left_ {
+  position: relative;
+}
+
+#_hero-left_ ._image-container_ {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/img/pharmacy-inventory.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-bottom: 25%;
+}
+
+#_hero-left_ ._overlay_ {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+footer > ._social-container_ {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer > ._social-container_ i {
+  color: #E8E6E2;
+}
