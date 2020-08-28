@@ -9,6 +9,10 @@
     flex-direction: column;
     background-color: var(--color-primary);
     transition: 0.5s;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px 1fr;
 }
 
 ._container_:hover {
@@ -20,7 +24,6 @@
 }
 
 ._top_ {
-    height: 70%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,7 +31,7 @@
 }
 
 ._bottom_ {
-    padding: 0 20%;
+    padding: 0 5%;
 }
 ._bottom_ > p {
     font-size: 24px;
