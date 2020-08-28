@@ -13,6 +13,10 @@
   --text-primary: #E8E6E2;
   --text-secondary: #C7C3BC;
   --test-tertiary: #9D9487;
+  --h1: 60px;
+  --h2: 50px;
+  --h3: 30px;
+
 }
 
 
@@ -25,9 +29,9 @@ h1, h2, h3, h4, h5 {
   color: #E8E6E2;
 }
 
-h1 { font-size: 80px; }
-h2 { font-size: 50px; }
-h3 { font-size: 30px; }
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
 
 a {
   text-decoration: none;
@@ -36,40 +40,4 @@ a {
 
 body {
   background-color: #53762B;
-}
-
-#_hero_ {
-  height: 100%;
-  height: 200px;
-  position: relative;
-}
-
-#_hero_ > ._image-container_ {
-
-  width: 100%;
-  height: 100%;
-  position: absolute;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url('../img/home-hero.png');
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-
-}
-
-#_hero_ > ._overlay_ {
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.35);
-  position: absolute;
-}
-
-#_hero_  h1 { 
-    color: var(--text-primary);
-    z-index: 1;
 }
