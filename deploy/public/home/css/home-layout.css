@@ -3,22 +3,27 @@ main {
     padding: 0 10%;
 }
 
+/* = = = = = = = = = =  */
 
-#_popular-strains_ {
-    height: 100px;
-    border: solid red 5px;
+#_popular-strains_, #_nearby-dispensaries_ {
+    /* border: solid red 5px; */
 }
-#_popular-strains_ > h3 {
+#_popular-strains_ > h3, #_nearby-dispensaries_ > h3 {
     margin-left: 2%;
 }
 
-#_popular-strains_ > .__container__ {
+#_popular-strains_ > .__container__,
+#_nearby-dispensaries_ > .__container__ {
+    height: 100%;
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
 }
-
-._popular-strain_ {
-    border: solid blue 5px;
+#_popular-strains_ > .__container__ {
+    grid-template-columns: repeat(3, 1fr);
 }
+#_nearby-dispensaries_ > .__container__ {
+    grid-template-columns: repeat(4, 1fr);
+} 
+/* = = = = = = = = = =  */
+
