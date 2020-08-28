@@ -20,6 +20,24 @@ main {
     grid-gap: 3%;
     margin: 1.5% 0;
 }
+
+@media (max-width: 1000px) {
+  #_strains_ > .__container__,
+    #_disp_ > .__container__,
+    #_edu_ > .__container__  {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 20%;
+  }
+  /* #_main_ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  } */
+}
+
 #_strains_ > .__container__ {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -28,4 +46,4 @@ main {
 } 
 #_edu_ > .__container__ {
     grid-template-columns: repeat(3, 1fr);
-} 
+}

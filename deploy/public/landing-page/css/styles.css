@@ -46,7 +46,11 @@ body {
   height: 117.8472vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 1fr 1.2fr 100px;
-  grid-template-areas: "_navbar_     _navbar_" "_hero-left_  _hero-right_" "_main_       _main_" "_footer_     _footer_";
+  grid-template-areas: 
+    "_navbar_     _navbar_" 
+    "_hero-left_  _hero-right_" 
+    "_main_       _main_" 
+    "_footer_     _footer_";
 }
 
 @media (max-width: 1000px) {
@@ -54,7 +58,12 @@ body {
     height: 200vh;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 1fr 4.5fr 100px;
-    grid-template-areas: "_navbar_    " "_hero-left_ " "_hero-right_" "_main_" "_footer_    ";
+    grid-template-areas: 
+      "_navbar_    "
+      "_hero-left_ "
+      "_hero-right_"
+      "_main_"
+      "_footer_    ";
   }
   #_main_ {
     display: flex;
