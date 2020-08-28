@@ -47,9 +47,10 @@ body {
     }
 }
 
-#_nav_ {
+#navbar{
   grid-area: _navbar_;
-  background: $color-primary;
+  // background: $color-primary;
+  
 }
 #_hero-left_ {
   grid-area: _hero-left_;

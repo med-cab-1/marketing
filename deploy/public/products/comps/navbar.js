@@ -2,8 +2,7 @@ const template = document.createElement('template');
 template.innerHTML = `
     <style>
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-    body {
+body {
      margin:0;
      padding:0;
      box-sizing: border-box;
@@ -61,7 +60,7 @@ li a {
     <nav id="_nav_">
         <ul class="conatinernav">
             <li><a class="navbar" href="/">Home</a></li>
-            <li><a class="navbar" href="#">Products</a></li>
+            <li><a class="navbar" href="/products">Products</a></li>
             <li><a class="navbar" href="/about">About</a></li>
             <li><a class="navbar" href="/contact">Contact</a></li>
 
