@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Med Cab | Home</title>
+
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/home-layout.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/popular-strain.css">
-    <script type="module" src="./comps/svg-hero.js" defer></script>
+
     <script type="module" src="./comps/popular-strain1.js"></script>
+    <script type="module" src="./comps/navbar.js"></script>
+    <script type="module" src="navbar.js"></script>
 </head>
 <body>
 
-    <nav id="_nav_">
-        <ul class="conatinernav">
-            <li><a class="navbar" href="/">Home</a></li>
-            <li><a class="navbar" href="#">Products</a></li>
-            <li><a class="navbar" href="/about">About</a></li>
-            <li><a class="navbar" href="/contact">Contact</a></li>
-
-            <div id="_right_nav-item">
-                <li><a class="navbar" href="#">Login</a></li>
-            </div>
-        </ul>
-    </nav>
+    <navbar-comp></navbar-comp>
 
     <section id="_hero_">
-                
     </section>
 
     <main>
@@ -51,6 +43,15 @@
             </div>
         </section>
 
+        <section id="_nearby-dispensaries_">
+            <h3>Nearby Dispensaries</h3>
+            <div class="__container__">
+                <popular-strain1></popular-strain1> 
+                <popular-strain1></popular-strain1>
+                <popular-strain1></popular-strain1>
+                <popular-strain1></popular-strain1>
+            </div>
+        </section>
 
     </main>
 
