@@ -1,18 +1,18 @@
 main {
     padding: 0 10%;
 }
-#_popular-strains_ > h3, #_nearby-dispensaries_ > h3, #_get-educated_ > h3 {
+#_strains_ > h3, #_disp_ > h3, #_edu_ > h3 {
     margin-left: 2%;
 }
 
-#_popular-strains_,
-#_nearby-dispensaries_,
-#_get-educated_{
+#_strains_,
+#_disp_,
+#_edu_{
     margin: 3% 0;
 }
-#_popular-strains_ > .__container__,
-#_nearby-dispensaries_ > .__container__,
-#_get-educated_ > .__container__ {
+#_strains_ > .__container__,
+#_disp_ > .__container__,
+#_edu_ > .__container__ {
     height: 100%;
     display: grid;
     grid-gap: 1px;
@@ -20,12 +20,12 @@ main {
     grid-gap: 3%;
     margin: 1.5% 0;
 }
-#_popular-strains_ > .__container__ {
+#_strains_ > .__container__ {
     grid-template-columns: repeat(3, 1fr);
 }
-#_nearby-dispensaries_ > .__container__ {
+#_disp_ > .__container__ {
     grid-template-columns: repeat(4, 1fr);
 } 
-#_get-educated_ > .__container__ {
+#_edu_ > .__container__ {
     grid-template-columns: repeat(3, 1fr);
 } 
