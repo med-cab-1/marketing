@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --color-primary: #1F2325;
+    --color-secondary: #53762B;
+    --color-tertiary: #1D2952;
+    --color-4: #2B2C2C;
+
+    --text-primary: #E8E6E2;
+    --text-secondary: #C7C3BC;
+    --test-tertiary: #9D9487;
+
+    /* --debug: solid; */
+    --debug: none;
+
+    --debug-1: 5px red     var(--debug);
+    --debug-2: 5px blue    var(--debug);
+    --debug-3: 5px orange  var(--debug);
+    --debug-4: 5px green   var(--debug);
+    --debug-5: 5px yellow  var(--debug);
+    --debug-6: 5px purple  var(--debug);
+
+    --card-width: 256px;
+
+    --border-radius: 10px;
+}
+
+
+.card-container{
+    /* width: fit-content; */
+    width: var(--card-width);
+    border: solid yellow 1px;
+    color: var(--text-primary, #E8E6E2);
+
+    border-radius: var(--border-radius);
+    /* overflow: hidden; */
+}
+
+hr, .card-container {
+    border: solid 1px var(--color-4);
+}
+
+.ThreeD-Container {
+    perspective: 600px;
+    height: 256px;
+    width: 100%;
+
+    border: var(--debug-1);
+    overflow: hidden;
+}
+.Card {
+
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+
+    border: var(--debug-2);
+
+    position: relative;
+    transition: 0.5s transform ease;
+
+}
+.ThreeD-Container:hover .Card{
+    transform: rotateY(180deg);
+}
+.Card-Face {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: solid black 1px;
+    border: var(--debug-4);
+}
+.Image-Container {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Color-Overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+.Image-Container > h4 {
+    z-index: 1;
+}
+.Card-Face-Front {
+    background: var(--color-primary, #1F2325);
+    border: var(--debug-6);
+}
+.Card-Face-Back {
+    background: var(--color-tertiary, #1D2952);
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Center {
+    display: grid;
+    place-items: center;
+}
+.card-title-container {
+    height: 100px;
+    width: 100%;
+    border: solid black 1px;
+    background: var(--color-primary, #1F2325);
+    
+    padding: 5%;
+    border: var(--debug-3);
+
+    display: flex;
+}
+.center-text > h5, .center-text > p {
+    text-align: center;
+}
+.center-text > h5 {
+    font-size: 20px;
+    color: var(--text-primary, #E8E6E2);
+}
+.center-text > p {
+    font-size: 14px;
+    color: var(--text-secondary, #C7C3BC);
+}
