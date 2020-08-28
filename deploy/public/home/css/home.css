@@ -43,6 +43,15 @@ body {
 }
 
 #_hero_ {
-  height: 100vw;
+  height: 100%;
   height: 200px;
+
+  border: solid red 5px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/home-hero.png');
+
 }
+
