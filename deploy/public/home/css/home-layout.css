@@ -20,4 +20,5 @@ main {
 } 
 #_get-educated_ > .__container__ {
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3%;
 } 
