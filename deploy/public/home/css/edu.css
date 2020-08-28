@@ -31,7 +31,7 @@
 ._bottom_ > p {
     font-size: 24px;
     text-align: center;
-    color: white;
+    color: var(--text-secondary);
 }
 
 ._top_, ._bottom_ {

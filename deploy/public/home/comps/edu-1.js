@@ -3,21 +3,22 @@ template.innerHTML = `
     <style>
         @import url('./css/edu.css');
 
-
+        ._top_ {
+            background-image: url('./img/edu-1.png');
+        }
     </style>
 
 
-            <div class="_container_">
+    <div class="_container_">
 
-                <div class="_top_">
-                </div>
+        <div class="_top_">
+        </div>
 
-                <div class="_bottom_">
-                    <p>What is cannabis and what is cannabis strain?</p>
-                </div>
-                
-            </div>
-
+        <div class="_bottom_">
+            <p>What is cannabis and what is cannabis strain?</p>
+        </div>
+        
+    </div>
 `;
 
 class WebComp extends HTMLElement {
@@ -27,9 +28,7 @@ class WebComp extends HTMLElement {
         this.attachShadow({ mode: 'open' });
         const deep_copy = true; // include descendants
         this.shadowRoot.appendChild(template.content.cloneNode(deep_copy));
-
         // this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
-
         // this.innerHTML = ``;
     }
 }
