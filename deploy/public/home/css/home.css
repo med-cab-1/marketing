@@ -5,6 +5,16 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+:root {
+  --color-primary: #1F2325;
+  --color-secondary: #53762B;
+  --color-tertiary: #1D2952;
+
+  --text-primary: #E8E6E2;
+  --text-secondary: #C7C3BC;
+  --test-tertiary: #9D9487;
+}
+
 
 ._center_ {
   display: grid;

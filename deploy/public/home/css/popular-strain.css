@@ -6,7 +6,9 @@
     width: 500px;
     border: solid red 5px;
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+    
+    background-color: var(--color-primary);
 }
 
 ._top_ {
