@@ -1,7 +1,29 @@
+/* body {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-template-areas: 
+  "_navbar_     " 
+  "_hero_  " 
+  "_main_       "
+  "_footer_     ";
+} */
+
+/* nav-bar {
+    grid-area: _navbar_;
+}
+#_hero_ {
+    grid-area: _hero_;
+} */
 main {
-    height: 500px;
+    /* grid-area: _main_; */
     padding: 0 10%;
 }
+/* footer {
+    grid-area: _footer_;
+} */
+
 
 /* = = = = = = = = = =  */
 

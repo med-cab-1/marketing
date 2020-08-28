@@ -86,4 +86,4 @@ class WebComp extends HTMLElement {
     }
 }
 
-window.customElements.define('navbar-comp', WebComp);
+window.customElements.define('nav-bar', WebComp);

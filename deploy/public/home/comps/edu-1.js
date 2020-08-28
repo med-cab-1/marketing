@@ -5,18 +5,25 @@ template.innerHTML = `
         /* fill remaing space vertically with flexbox: */
         /* https://codepen.io/JoshuaHolloway/pen/rNemPom */
 
-        ._popular-strain_{
+        ._container_{
+            overflow: hidden;
+            border-radius: 20px;
             height: 500px;
-            /* width: 500px; */
-            border: solid red 5px;
+            // border: solid red 5px;
             display: flex;
             flex-direction: column;
-            
             background-color: var(--color-primary);
+            transition: 0.5s;
+        }
+
+        ._container_:hover {
+            -webkit-box-shadow: 17px 14px 21px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 17px 14px 21px 0px rgba(0,0,0,0.75);
+            box-shadow: 17px 14px 21px 0px rgba(0,0,0,0.75);
         }
 
         ._top_ {
-            border: solid blue 5px;
+            // border: solid blue 5px;
             height: 70%;
 
             background-repeat: no-repeat;
@@ -28,7 +35,7 @@ template.innerHTML = `
 
         ._bottom_ {
             padding: 0 20%;
-            border: solid orange 5px;
+            // border: solid orange 5px;
         }
         ._bottom_ > p {
             font-size: 24px;
@@ -44,7 +51,7 @@ template.innerHTML = `
     </style>
 
 
-            <div class="_popular-strain_">
+            <div class="_container_">
 
                 <div class="_top_">
                 </div>
