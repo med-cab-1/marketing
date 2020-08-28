@@ -3,11 +3,46 @@ template.innerHTML = `
     <style>
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
+:root {
+    --color-primary: #1F2325;
+    --color-secondary: #53762B;
+    --color-tertiary: #1D2952;
+    --color-4: #2B2C2C;
+
+    --text-primary: #E8E6E2;
+    --text-secondary: #C7C3BC;
+    --test-tertiary: #9D9487;
+
+    /* --debug: solid; */
+    --debug: none;
+
+    --debug-1: 5px red     var(--debug);
+    --debug-2: 5px blue    var(--debug);
+    --debug-3: 5px orange  var(--debug);
+    --debug-4: 5px green   var(--debug);
+    --debug-5: 5px yellow  var(--debug);
+    --debug-6: 5px purple  var(--debug);
+
+    --card-width: 256px;
+
+    --border-radius: 10px;
+}
+
+        .card-container{
+            /* width: fit-content; */
+            width: 256px;
+            border: solid black 1px;
+            border-radius: 10px;
+        }
+
         .ThreeD-Container {
             perspective: 600px;
             height: 256px;
             width: 256px;
+            border-radius: 10px 10px 0 0 ;
         }
         .Card {
             border: var(--debug-border-3);
@@ -15,13 +50,15 @@ template.innerHTML = `
             width: 100%;
             cursor: pointer;
             transform-style: preserve-3d;
-        }
-        .Card {
+
             position: relative;
             transition: 0.5s transform ease;
+            border-radius: inherit;
         }
+
         .ThreeD-Container:hover .Card{
             transform: rotateY(180deg);
+
         }
         .Card-Face {
             height: 100%;
@@ -29,6 +66,7 @@ template.innerHTML = `
             position: absolute;
             backface-visibility: hidden;
             border: solid black 1px;
+
         }
         .Image-Container {
             height: 100%;
@@ -36,6 +74,7 @@ template.innerHTML = `
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+
         }
         .Color-Overlay {
             height: 100%;
@@ -48,9 +87,10 @@ template.innerHTML = `
         }
         .Card-Face-Front {
             background: var(--background-6);
+            border-radius: inherit;
+            background: var(--color-primary, #1F2325);
         }
         .Card-Face-Back {
-            background: var(--background-7);
             transform: rotateY(180deg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -58,26 +98,59 @@ template.innerHTML = `
             background-color: hotpink;
             padding: 15%;
             text-align: center;
+            border-radius: inherit;
+            background: var(--color-tertiary, #1D2952);
         }
         .Center {
             display: grid;
             place-items: center;
         }
-        .card-container{
-            width: fit-content;
-            border: solid black 1px;
-        }
+
         .card-title-container {
+            display: grid;
+            place-items: center;
             height: 100px;
             width: 100%;
             border: solid black 1px;
+            border-radius: 0 0 10px 10px;
+            background: var(--color-primary, #1F2325);
+            // border: solid red 5px;
+
         }
+        .card-title-container > .center-text {
+            
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: space-around;
+
+            text-align: center;
+
+            // border: solid blue 5px;
+        }
+
+        .card-title-container > .center-text > h5 {
+            font-size: 20px;
+            color: var(--text-primary, #E8E6E2);
+        }
+        .card-title-container > .center-text > p {
+            font-size: 14px;
+            color: var(--text-secondary, #C7C3BC);
+        }
+
     </style>
     <div class="card-container">
         <div class="ThreeD-Container">
             <div class="Card">
                 <div class="Card-Face Card-Face-Front">
                     <div class="Image-Container Center">                       
+
+
+
+
+
 
 
 <svg width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,10 +174,10 @@ template.innerHTML = `
             </div>
         </div>
 
-        <div class="card-title-container Center">
-            <div class="center-text" style="text-align: center;">
-                <h4>Find your strain</h4>
-                <h5>Find strains based on their effects <br/> and taste in a database of thousands</h5>
+        <div class="card-title-container">
+            <div class="center-text">
+                <h5>Find your strain</h5>
+                <p>Find strains based on their effects and taste in a database of thousands</p>
             </div>
         </div>
     </div>
