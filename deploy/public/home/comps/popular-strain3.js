@@ -26,6 +26,7 @@ template.innerHTML = `
         }
         ._bottom_ > h5 {
             font-size: 2.4rem;
+            text-align: center;
         }
 
         ._top_, ._bottom_ {
@@ -108,7 +109,7 @@ template.innerHTML = `
                 </div>
 
                 <div class="_bottom_">
-                    <h5>Silver Haze</h5>
+                    <h5>Blue Dream</h5>
                 </div>
                 
             </div>

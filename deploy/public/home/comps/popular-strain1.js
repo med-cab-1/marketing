@@ -26,6 +26,7 @@ template.innerHTML = `
         }
         ._bottom_ > h5 {
             font-size: 2.4rem;
+            text-align: center;
         }
 
         ._top_, ._bottom_ {
