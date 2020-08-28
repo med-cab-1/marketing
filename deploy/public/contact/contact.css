@@ -155,7 +155,7 @@ li a {
  }
  
  
- .fa-facebook-f{
+ ._fa-facebook-f_{
      color:#4267B2;
      display: block;
      height: 42px;
@@ -168,7 +168,7 @@ li a {
      text-align: center;
  }
 
- .fa-instagram{
+ ._fa-instagram_{
     display: block;
     height: 42px;
     width: 42px;
@@ -180,7 +180,7 @@ li a {
     color: white;
     text-align: center;
 }
-.fa-twitter{
+._fa-twitter_{
     display: block;
     height: 42px;
     width: 42px;
@@ -191,7 +191,7 @@ li a {
     color: white;
     text-align: center;
 }
-.fa-twitter{
+._fa-twitter_{
     display: block;
     height: 42px;
     width: 42px;
@@ -202,7 +202,7 @@ li a {
     color: white;
     text-align: center;
 }
-.fa-snapchat-ghost{
+._fa-snapchat-ghost_{
     display: block;
     height: 42px;
     width: 42px;
@@ -213,7 +213,7 @@ li a {
     color: white;
     text-align: center;
 }
-.fa-google-plus{
+._fa-google-plus_{
         display: block;
         height: 42px;
         width: 42px;
