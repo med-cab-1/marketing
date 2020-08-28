@@ -62,9 +62,14 @@ body {
 
 }
 
-#_hero_ ._overlay_ {
+#_hero_ > ._overlay_ {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.35);
   position: absolute;
+}
+
+#_hero_  h1 { 
+    color: var(--text-primary);
+    z-index: 1;
 }
