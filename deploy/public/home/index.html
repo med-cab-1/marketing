@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Med Cab | Home</title>
 
-    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="/landing-page/css/nav.css"/>
     <link rel="stylesheet" href="/landing-page/css/hero.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -13,7 +13,10 @@
     <script type="module" src="/landing-page/comps/card/card-2.js" defer></script>
     <script type="module" src="/landing-page/comps/card/card-3.js" defer></script>
     <script type="module" src="/landing-page/comps/button/button.js" defer></script>
+
+    <script type="module" src="./comps/svg-hero.js" defer></script>
     
+
 </head>
 <body>
 
@@ -32,43 +35,16 @@
         </nav>
 
 
-        <section id="_hero-left_">
+        <section id="_hero_">
 
 
+            <svg-hero></svg-hero>
+            
 
         </section>
         <!-- /._hero-left_ -->
 
-        <section id="_hero-right_">
 
-            <div class="_row_">
-                <button-comp name="Sign In"></button-comp>
-            </div>
-
-            <div class="_row_ _center_">
-
-                <div class="_container_">
-                    <div class="_row_">
-                        <h2>Find the strain that you need</h2>
-                    </div>
-
-                    <div class="_row_">
-                        
-                        <form id="" action="" method="get"></form>
-
-                        <label for="city">
-                            <!-- TODO: Before use starts typing have text inside field. -->
-                                <!-- -Once user starts typing, have text above field. -->
-                            <p>City:</p>
-                            <input id="city" name="city" type="text" placeholder="City">
-                        </label>
-
-                        <button-comp name="Find a Strain"></button-comp>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /._hero-right_ -->
 
         <main id="_main_">
             <a href="/find-strain">
@@ -83,24 +59,6 @@
                 <card-3></card-3>
             </a>
         </main>
-
-        <footer id="_footer_">
-            <div class="_social-container_">
-                
-                <a href="https://www.facebook.com/">
-                    <i class="fab fa-facebook-f fa-2x"></i>
-                </a>
-                
-                <a href="https://twitter.com/home?lang=en">
-                    <i class="fab fa-twitter fa-2x"></i>
-                </a>
-
-                <a href="https://www.instagram.com/?hl=en">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                
-            </div>
-        </footer>
 
     </div>
 

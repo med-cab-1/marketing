@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+._center_ {
+  display: grid;
+  place-items: center;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #E8E6E2;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #C7C3BC;
+}
+
+body {
+  background-color: #53762B;
+}
+
+#_hero_ {
+  height: 100vw;
+  height: 200px;
+}
