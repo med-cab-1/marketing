@@ -1,48 +1,54 @@
 const template = document.createElement('template');
 template.innerHTML = `
     <style>
+        @import url('./css/card.css');
 
-        /* fill remaing space vertically with flexbox: */
-        /* https://codepen.io/JoshuaHolloway/pen/rNemPom */
+        #_hero_ {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        ._image-container_ {
+            background-image: url('./img/edu-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
 
-        ._popular-strain_{
-            height: 500px;
-            /* width: 500px; */
-            border: solid red 5px;
+            height: 100%;
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            
-            background-color: var(--color-primary);
+
+            justify-content: center;
+            align-items: center;
+            position: absolute;
         }
 
-        ._top_ {
-            border: solid blue 5px;
-            height: 70%;
+        #_hero_ > ._overlay_ {
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            position: absolute;
         }
 
-        ._bottom_ {
-            border: solid orange 5px;
-            flex: 1;
-        }
-        ._bottom_ > h5 {
-            font-size: 2.4rem;
-            text-align: center;
+        #_hero_  svg,
+        ._bottom_ p { 
+            z-index: 1;
         }
 
-        ._top_, ._bottom_ {
-            display: grid;
-            place-items: center;
+        ._bottom_ p {
+            color: var(--text-secondary);
+            font-size: var(--h2);
         }
 
     </style>
 
 
-            <div class="_popular-strain_">
+    <div class="_container_">
 
-                <div class="_top_">
+        <div class="_top_">
 
-
-
+            <section id="_hero_">
+                <div class="_image-container_">
 <svg width="86" height="96" viewBox="0 0 86 96" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
 <rect x="4" y="2" width="78" height="86" rx="20" fill="url(#paint0_angular)"/>
@@ -105,15 +111,20 @@ template.innerHTML = `
 </defs>
 </svg>
 
-                    
-                </div>
 
-                <div class="_bottom_">
-                    <h5>Blue Dream</h5>
-                </div>
-                
-            </div>
 
+
+                </div>
+                <div class="_overlay_"></div>
+            </section>
+
+        </div>
+
+        <div class="_bottom_">
+            <p>Hybrid</p>
+        </div>
+        
+    </div>
 `;
 
 class WebComp extends HTMLElement {
