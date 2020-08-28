@@ -9,7 +9,7 @@ template.innerHTML = `
             position: relative;
         }
         ._image-container_ {
-            background-image: url('./img/edu-1.png');
+            background-image: url('./img/edu-1_small_MozJPEG.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;

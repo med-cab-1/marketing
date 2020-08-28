@@ -4,7 +4,7 @@ template.innerHTML = `
         @import url('./css/card.css');
 
         ._top_ {
-            background-image: url('./img/edu-2.png');
+            background-image: url('./img/edu-2_small_MozJPEG.png');
         }
     </style>
 

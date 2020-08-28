@@ -15,7 +15,7 @@ template.innerHTML = `
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            background-image: url('./img/home-hero.png');
+            background-image: url('./img/home-hero_small_MozJPEG.jpg');
 
             display: flex;
             justify-content: center;
